@@ -98,7 +98,7 @@ class UnitTests(unittest.TestCase):
         self.rect.set_width(15)
         actual = self.rect.get_amount_inside(self.sq)
         expected = 6
-        self.assertEqual(actual, expected, 'Expected `get_amount_inside` to return 6.')
+        self.assertEqual(actual, expected, f'Expected `get_amount_inside` to return 6.{self.sq}{self.rect}')
 
     def test_get_amount_inside_two_rectangles(self):
         rect2 = shape_calculator.Rectangle(4, 8)
